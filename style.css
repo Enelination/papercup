@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+   
+}
+.bg-box{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    z-index: -11;
+}
+.bg{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+
+}
+.bg1{
+    background: #f43333;
+}
+.bg2{
+    background: #ba33f4;
+    width: 0;
+    right: 0;
+}
+.img-box{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    left: 8%;
+    overflow: hidden;
+    
+}
+.img{
+    position: absolute;
+}
+.img2{
+    top: 100%;
+}
+.nav{
+    width: 50%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 0 8px;
+}
+.logo{
+    margin: 0 20px;
+    
+}
+.logo > a{
+    font-size: 25px;
+    font-weight: 600;
+}
+span{
+    color: #f43333;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+.add-to-cart{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #f43333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 50%;
+    height: 50%;
+   
+    position: absolute;
+    left: 50%;
+    top: 22%;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 40px -3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+    border: 3px solid #fdfdfd;
+}
+.c1{
+    background: #f43333;
+}
+.c2{
+    background: #ba33f4;
+}
+p{
+    width: 400px;
+    
+    line-height: 18px;
+}
+.tag{
+    text-transform: uppercase;
+}
+.des{
+    color: #fff;
+}
+h1{
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 20px 0;
+}
+button{
+    width: 120px;
+    height: 30px;
+    margin-top: 30px;
+    border: 0;
+    outline: none;
+    text-transform: capitalize;
+    background: #fff;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+    cursor: pointer;
+    color: #f43333;
+    font-weight: 500;
+}

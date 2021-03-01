@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="all.min.js"></script>
+   <script src="gsap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>paper cup</title>
+</head>
+<body>
+   
+    <div class="container">
+      
+      
+      <div class="nav">
+          <ul>
+              <li><a href="#">product</a></li>
+              <li><a href="#">about</a></li>
+              <li class="logo"><a href="#">dot <span>.</span></a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+          </ul>
+      </div>
+      
+     <div class="add-to-cart">
+         <i class="fas fa-shopping-cart"></i>
+     </div>
+       
+       <div class="img-box">
+        <div class="img img1">
+            <img src="./images/img1.png" alt="">
+        </div>
+    </div>
+      <div class="img-box">
+        <div class="img img2">
+            <img src="./images/img2.png" alt="">
+        </div>
+    </div>
+      
+      <div class="main-box">
+          <div class="color">
+              <ul>
+                  <li class="circle c1"></li>
+                  <li class="circle c2"></li>
+              </ul>
+          </div>
+          <p class="teg">pack of 20</p>
+          <h1>dot printed paper cup</h1>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus, tenetur quis alias earum nihil?</p>
+          <button>add to bag</button>
+      </div>
+       
+       
+       
+       
+        <div class="bg-box">
+            <div class="bg bg1"></div>
+            <div class="bg bg2"></div>
+        </div>
+    </div>
+    
+    
+    <script>
+        
+        
+        document.querySelector('.c1').addEventListener('click', () => {
+            gsap.to('.bg2', {
+                width: '0',
+                duration: .8,
+                ease: Power3.in
+            })
+            gsap.to('.img1', {
+                top: '0',
+                duration: .8,
+                ease: Power3.in,
+                delay: .8
+            })
+            gsap.to('.img2', {
+                top: '100%',
+                duration: .8,
+                ease: Power3.in
+            })
+        })
+        document.querySelector('.c2').addEventListener('click', () => {
+            
+            gsap.to('.bg2', {
+                width: '100%',
+                duration: .8,
+                ease: Power3.in
+            })
+            gsap.to('.img1', {
+                top: '100%',
+                duration: .8,
+                ease: Power3.in
+            })
+            gsap.to('.img2', {
+                top: '0',
+                duration: .8,
+                ease: Power3.in,
+                delay: .8
+            })
+            
+        })
+        
+    </script>
+    
+    
+    
+</body>
+</html>
